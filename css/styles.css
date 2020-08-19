@@ -487,6 +487,14 @@ mark,
   height: auto;
 }
 
+.img-thumbnail-small{
+  padding: 0.1rem;
+  background-color: #fff;
+  border-radius: 20rem;
+  max-width: 10%;
+  height: auto;
+}
+
 .figure {
   display: inline-block;
 }
@@ -2946,6 +2954,14 @@ fieldset:disabled a.btn {
 }
 .btn-block + .btn-block {
   margin-top: 0.5rem;
+}
+
+.btn-soc {
+  padding: 0.25rem 0.25rem;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  margin-top: -1rem;
+  
 }
 
 input[type=submit].btn-block,
@@ -10102,11 +10118,26 @@ header.masthead {
   background-attachment: fixed;
   background-size: cover;
 }
+
+section.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.masthead p {
+  font-size: 1rem
+}
+
 header.masthead h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
-  header.masthead {
+  header.masthead,section.masthead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
