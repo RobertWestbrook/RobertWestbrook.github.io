@@ -488,9 +488,10 @@ mark,
 }
 
 .img-thumbnail-small{
-  padding: 0.1rem;
+  padding: 1px;
   background-color: #fff;
-  border-radius: 20rem;
+  border-radius: 2rem;
+  margin-right: 10px;
   max-width: 10%;
   height: auto;
 }
@@ -4012,7 +4013,7 @@ input[type=button].btn-block {
   justify-content: space-between;
 }
 .navbar-brand {
-  display: inline-block;
+  display: contents;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -4049,7 +4050,7 @@ input[type=button].btn-block {
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
-  align-items: center;
+  align-items: right;
 }
 
 .navbar-toggler {
@@ -10117,6 +10118,9 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 section.masthead {
