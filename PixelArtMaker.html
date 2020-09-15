@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Antioch Mobile - details</title>
+  <title>Pixal Art Maker - details</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -26,12 +26,16 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/pixel.css" rel="stylesheet">
+
+
 
   <!-- =======================================================
   !!! The foundations of this page were produced by BootstrapMade.com and merely
   modified and customized using BootstrapJS myself. This site is not meant to show the 
   extent of my abilities but to showcase my journey into the world of software development.
   !!!
+
   * Template Name: MyResume - v2.1.0
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
   * Author: BootstrapMade.com
@@ -50,34 +54,65 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">Antioch Mobile</h2>
-              <div class="d-flex mh-100 justify-content-center">
-                <img src="assets/img/portfolio/am-1.png" class="img-fluid portfolio-img" alt="">
-                <img src="assets/img/portfolio/am-3.png" class="img-fluid portfolio-img" alt="">
-                <img src="assets/img/portfolio/am-2.png" class="img-fluid portfolio-img " alt="">
+            <h2 class="portfolio-title">Pixel Art Maker</h2>
+            <div class="justify-content-around">
+              <div class="pix-body">
+                <h4>Choose Grid Size</h4>
+                <form id="sizePicker">
+                    Grid Height:
+                    <input type="number" id="inputHeight" class="pix-input" name="height" min="1" value="10"><br>
+                    Grid  Width:
+                    <input type="number" id="inputWidth" class="pix-input" name="width" min="1" value="10"><br>
+                    <input type="submit">
+                    <h4>Pick A Color</h4>
+                    <input type="color" id="colorPicker" class="pix-input">
+                </form>
               </div>
-          </div>
 
+              <div class="container-fluid ">
+                <div class= "pix-body">
+                  <h4>Design Canvas</h4>
+                  <table id="pixelCanvas" class="table-bordered pix-td pix-table pix-tr"></table>
+                  <script src="assets/js/design.js"></script>
+                </div>
+              </div>
+            </div>  
+          </div>
           <div class="col-lg-4 portfolio-info">
             <h3>Project information</h3>
             <ul>
-              <li><strong>Category</strong>: Mobile Development</li>
-              <li><strong>Client</strong>: Antioch Community Church</li>
-              <li><strong>Project date</strong>: August, 2020</li>
-              <li><strong>Project URL</strong>: <a target= _blank href="https://github.com/RobertWestbrook/Antioch-Mobile">https://github.com/RobertWestbrook/Antioch-Mobile</a></li>
+              <li><strong>Category</strong>: JavaScript</li>
+              <li><strong>Project date</strong>: July, 2020</li>
+              <li><strong>Project URL</strong>: <a target= _blank href="https://github.com/RobertWestbrook/Pixel-art-Project">https://github.com/RobertWestbrook/Pixel-art-Project</a></li>
             </ul>
 
             <p>
-              <em>"The Antioch Mobile app is a fully cross platform app whose sole purpose is to provide a mobile solution to better foster communication and connection with a local church congregation."</em>
-              <br> <br>This app is really a sort of debut for me. I have never before attempted to do mobile development; however, I work really well when I see purpose in what I am doing. Using my knowledge of
-              sofware development and shear grit and determination, I learned the Flutter and went to town. In less than a month I learned the language and built the solid MVP that you see here. Though there is
-              plenty of more work to be done and features I would like to add, the concept that has been fleshed out was enough to win the support of the organizaion and I will now be joining up with a group of 
-              fellow coders to fully flesh out this application Pro-Bono for this local congregation.
+              This Started as a project that I did for Udacity and now I just use it to illustrate a degree of competance in the Vanilla JavaScript. 
+              This can be implemented into any web layout and can be customized pretty simply with a little prior knowledge of HTML and CSS. 
             </p>
+            <h4>Logic</h4>
+            <ul>
+              <li>
+                All of the logic was built using Vanilla JavaScript. The basic function of this script is to access the form, which contains the
+                desired number of pixels for the width and the height of the canvas and then draw them to the screen using nested loop functions.
+                Also inside these functions lies the event handlers that listen for when a cell is clicked and then change it to the color that
+                is indicated on the color picker. Each cell that is created on clicking the submit now functions almost as a button to be clicked 
+                and altered. Each time the submit button is pressed the canvas is then cleared. The bulk of this logic requires real time query of
+                DOM to indicate what needs to happen upon each click or submit.
+              </li> 
+
+              <li>
+                The HTML foundation and the CSS Code that can be found on the Github originated from Udacity with minor tweaks from me. 
+                The JavaScript was my own design. During the implementation into this internally framed VenoBox Version of this app
+                I actually modified the HTML and the CSS pretty heavily in order to seamlessly implement it into this BootstrapJS 
+                build website.
+              </li>
+            </ul>
             <h3>Tech Stack Used:</h3>
             <ul>
-              <li><h3>Flutter</h3>
-              <li><h3>Firebase</h3>
+              <li><h3>JavaScript</h3>
+              <li><h3>HTML</h3>
+              <li><h3>Bootstrap.js (just to implement into this page)</h3>
             </ul>
           </div>
 
