@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg.jpg") 50% 10% no-repeat;
+  background: url("../img/bg.jpg") 50% 30% no-repeat;
   background-size: cover;
   position: relative;
   background-attachment: scroll;
@@ -828,6 +828,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .section-header {
   margin-bottom: 40px;
+  
 }
 
 .testimonials .testimonial-item {
@@ -835,8 +836,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 120px;
-  border-radius: 50%;
+  width: 200px;
+  border-radius: 100%;
   border: 4px solid #fff;
   margin: 0 auto;
 }
